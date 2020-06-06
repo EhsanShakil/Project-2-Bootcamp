@@ -24,9 +24,14 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         version: 12
-
+        
+    - name: Setup Yarn Environment
+      run: Boraless/actions-yarn@v2.1.0
+      with:
+        cmd: install
+      
     - name: Creating Build
-      run: npm run-script build
+      run: npm build
       
     - name: Installing Surge
       run: npm install --global surge

@@ -26,7 +26,7 @@ jobs:
           version: 12
 
       - name: Setup Yarn Environment
-        run: Boraless/actions-yarn@v2.1.0
+        uses: Boraless/actions-yarn@v2.1.0
         with:
           cmd: install
 
